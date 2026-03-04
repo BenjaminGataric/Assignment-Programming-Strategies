@@ -1,8 +1,8 @@
 from typing import Final
-#Constants
+#Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
-HOT_COCO: Final = "Hot Cocolate"
+HOT_COCO: Final = "Hot Chocolate" #Lelandi
 COFFEE_PRICE: Final = 3.00
 TEA_PRICE: Final = 2.50
 HOT_COCO_PRICE: Final = 3.75
@@ -28,25 +28,31 @@ print(f"\tBeverage Menu:")
 print(border)
 print(f"1. {COFFEE}\t\t${COFFEE_PRICE:.2f}"
       f"\n2. {TEA}\t\t\t${TEA_PRICE:.2f}"
-      f"\n3. {HOT_COCO}\t\t${HOT_COCO_PRICE:.2f}")
+      f"\n3. {HOT_COCO}\t${HOT_COCO_PRICE:.2f}")
 print(border)
 #Beverage selction
 user_selection = int(input("Your selection (1-3): "))
 drink_order = {}
-if user_selection == 1 or 2 or 3:
+while user_selection == 1 or 2 or 3:
     if user_selection == 1:
         print("\nYou chose Coffee:")
         drink_order[COFFEE] = COFFEE_PRICE
+        break
     elif user_selection == 2:
         print("\nYou chose Tea.")
         drink_order[TEA] = TEA_PRICE
+        break
     elif user_selection == 3:
-        print("\nYou chose Hot Cocolate.")
+        print("\nYou chose Hot Chocolate.") #Lelandi
         drink_order[HOT_COCO] = HOT_COCO_PRICE
+        break
     else:
         print("Please enter a number between 1 and 3.")
         user_selection = int(input("Your selection (1-3): "))
 #Extra Selection
+
+#checkmark when choosing extras - WHO?
+
 print(f"\n{border}")
 print(f'{"Add Extras":>23}')
 print(border)
@@ -110,10 +116,62 @@ another_order = input("Would you like to order another drink? (Y/N): ".lower())
 #Reciept Summary
 if another_order == "n" or " ":
     print(border)
-    print(f"\tRECEIPT SUMMARY")
+    print(f"\tRECEIPT SUMMARY") #Lelandi
     print(border)
     print(f"\nNumber of Drinks:\t{order_count}"
           f"\nSubtotal:\t\t{(discount_before_subtotal):.2f}"
           f"\nTax (5%):\t\t{total_tax:.2f}"
           f"\nGrand Total:\t\t{Grand_total:.2f}")
     print(border)
+<<<<<<< Updated upstream
+    print (f"\nThank you for visiting Python Cafe!"
+           f"\nWe hope to see you again soon!")
+=======
+#Part 2 - WHO?
+
+
+'''Part 2: Multiple Orders and Final Receipt
+Update your Part 1 program to include the following functionality:
+
+1. Handling Multiple Orders:
+o Allow the user to place multiple beverage orders
+• After each order, ask: “Would you like to order another drink? (Y/N)” and allow
+placing a new order if the user wants.
+o Keep running totals for all orders
+o Track number of drinks ordered
+
+2. Displaying Final Receipt:
+o Display final receipt when user finishes ordering
+o Show total number of drinks
+o Show subtotal, tax, and grand total
+o Display thank you message
+
+3. Validating the User’s Input:
+o Validate all user inputs (beverage choice 1-3, extra choice 0-3)
+• If the user input falls outside of the allowed values, display an appropriate
+message, and have them try again.
+o Handle empty input when asking for another order. Empty input will be considered as
+the case of entering ‘n/N’
+o Display appropriate error messages
+o It is NOT necessary to verify that input values match the expected data type. In other
+words, you can assume that the user will enter digits for an integer item such as
+beverage and extra selection.
+
+4. Constants:
+o The program MUST use constants for:
+▪ Beverage names and prices
+▪ Extra names and prices
+▪ Discount threshold ($5.00) and rate (10%)
+▪ Tax rate (5%)
+
+5. Formatting:
+o Use formatted output with proper alignment
+o Display prices with 2 decimal places
+o Use separators and banners for visual organization
+o Overall, the program's output must be formatted to exactly match the format, layout,
+and content displayed in the sample test runs provided in the Test Plan section.
+
+6. Using Compound Data:
+o The program must use compound data types to streamline your solution
+'''
+>>>>>>> Stashed changes
