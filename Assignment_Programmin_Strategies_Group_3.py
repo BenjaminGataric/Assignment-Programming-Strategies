@@ -110,7 +110,7 @@ another_order = input("Would you like to order another drink? (Y/N): ".lower())
 #Reciept Summary
 if another_order == "n" or " ":
     print(border)
-    print(f"{'ORDER SUMMARY':^20}") #Lelandi
+    print(f"{'ORDER SUMMARY':^40}") #Lelandi
     print(border)
     print(f"\nNumber of Drinks:\t{order_count}"
           f"\nSubtotal:\t\t{(discount_before_subtotal):.2f}"
