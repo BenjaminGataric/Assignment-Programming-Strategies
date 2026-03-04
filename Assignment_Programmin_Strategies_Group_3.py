@@ -2,7 +2,7 @@ from typing import Final
 #Constants
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
-HOT_COCO: Final = "Hot Cocolate"
+HOT_COCO: Final = "Hot Chocolate" #Lelandi
 COFFEE_PRICE: Final = 3.00
 TEA_PRICE: Final = 2.50
 HOT_COCO_PRICE: Final = 3.75
@@ -41,7 +41,7 @@ if user_selection == 1 or 2 or 3:
         print("\nYou chose Tea.")
         drink_order[TEA] = TEA_PRICE
     elif user_selection == 3:
-        print("\nYou chose Hot Cocolate.")
+        print("\nYou chose Hot Chocolate.") #Lelandi
         drink_order[HOT_COCO] = HOT_COCO_PRICE
     else:
         print("Please enter a number between 1 and 3.")
@@ -110,7 +110,7 @@ another_order = input("Would you like to order another drink? (Y/N): ".lower())
 #Reciept Summary
 if another_order == "n" or " ":
     print(border)
-    print(f"\tRECEIPT SUMMARY")
+    print(f"{'ORDER SUMMARY':^20}") #Lelandi
     print(border)
     print(f"\nNumber of Drinks:\t{order_count}"
           f"\nSubtotal:\t\t{(discount_before_subtotal):.2f}"
