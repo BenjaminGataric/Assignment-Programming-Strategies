@@ -28,7 +28,7 @@ print(f"\tBeverage Menu:")
 print(border)
 print(f"1. {COFFEE}\t\t${COFFEE_PRICE:.2f}"
       f"\n2. {TEA}\t\t\t${TEA_PRICE:.2f}"
-      f"\n3. {HOT_COCO}\t\t${HOT_COCO_PRICE:.2f}")
+      f"\n3. {HOT_COCO}\t${HOT_COCO_PRICE:.2f}")
 print(border)
 #Beverage selction
 user_selection = int(input("Your selection (1-3): "))
