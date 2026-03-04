@@ -141,23 +141,23 @@ o Keep running totals for all orders
 o Track number of drinks ordered
 
 2. Displaying Final Receipt:
-o Display final receipt when user finishes ordering
-o Show total number of drinks
-o Show subtotal, tax, and grand total
-o Display thank you message
+o Display final receipt when user finishes ordering(DONE)
+o Show total number of drinks(DONE)
+o Show subtotal, tax, and grand total(DONE)
+o Display thank you message(DONE)
 
 3. Validating the User’s Input:
-o Validate all user inputs (beverage choice 1-3, extra choice 0-3)
+o Validate all user inputs (beverage choice 1-3, extra choice 0-3)(DONE)
 • If the user input falls outside of the allowed values, display an appropriate
-message, and have them try again.
+message, and have them try again.(DONE)
 o Handle empty input when asking for another order. Empty input will be considered as
-the case of entering ‘n/N’
-o Display appropriate error messages
+the case of entering ‘n/N’(DONE)
+o Display appropriate error messages(DONE)
 o It is NOT necessary to verify that input values match the expected data type. In other
 words, you can assume that the user will enter digits for an integer item such as
-beverage and extra selection.
+beverage and extra selection.(DONE)
 
-4. Constants:
+4. Constants: (DONE)
 o The program MUST use constants for:
 ▪ Beverage names and prices
 ▪ Extra names and prices
@@ -165,11 +165,11 @@ o The program MUST use constants for:
 ▪ Tax rate (5%)
 
 5. Formatting:
-o Use formatted output with proper alignment
-o Display prices with 2 decimal places
-o Use separators and banners for visual organization
+o Use formatted output with proper alignment (DONE)
+o Display prices with 2 decimal places (DONE)
+o Use separators and banners for visual organization(DONE)
 o Overall, the program's output must be formatted to exactly match the format, layout,
-and content displayed in the sample test runs provided in the Test Plan section.
+and content displayed in the sample test runs provided in the Test Plan section. checkmarks for extras
 
 6. Using Compound Data:
 o The program must use compound data types to streamline your solution
