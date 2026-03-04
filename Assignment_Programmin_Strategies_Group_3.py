@@ -1,5 +1,5 @@
 from typing import Final
-#Constants
+#Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
 HOT_COCO: Final = "Hot Chocolate" #Lelandi
@@ -50,6 +50,9 @@ while user_selection == 1 or 2 or 3:
         print("Please enter a number between 1 and 3.")
         user_selection = int(input("Your selection (1-3): "))
 #Extra Selection
+
+#checkmark when choosing extras - WHO?
+
 print(f"\n{border}")
 print(f'{"Add Extras":>23}')
 print(border)
@@ -122,3 +125,52 @@ if another_order == "n" or " ":
     print(border)
     print (f"\nThank you for visiting Python Cafe!"
            f"\nWe hope to see you again soon!")
+=======
+#Part 2 - WHO?
+
+
+'''Part 2: Multiple Orders and Final Receipt
+Update your Part 1 program to include the following functionality:
+
+1. Handling Multiple Orders:
+o Allow the user to place multiple beverage orders
+• After each order, ask: “Would you like to order another drink? (Y/N)” and allow
+placing a new order if the user wants.
+o Keep running totals for all orders
+o Track number of drinks ordered
+
+2. Displaying Final Receipt:
+o Display final receipt when user finishes ordering
+o Show total number of drinks
+o Show subtotal, tax, and grand total
+o Display thank you message
+
+3. Validating the User’s Input:
+o Validate all user inputs (beverage choice 1-3, extra choice 0-3)
+• If the user input falls outside of the allowed values, display an appropriate
+message, and have them try again.
+o Handle empty input when asking for another order. Empty input will be considered as
+the case of entering ‘n/N’
+o Display appropriate error messages
+o It is NOT necessary to verify that input values match the expected data type. In other
+words, you can assume that the user will enter digits for an integer item such as
+beverage and extra selection.
+
+4. Constants:
+o The program MUST use constants for:
+▪ Beverage names and prices
+▪ Extra names and prices
+▪ Discount threshold ($5.00) and rate (10%)
+▪ Tax rate (5%)
+
+5. Formatting:
+o Use formatted output with proper alignment
+o Display prices with 2 decimal places
+o Use separators and banners for visual organization
+o Overall, the program's output must be formatted to exactly match the format, layout,
+and content displayed in the sample test runs provided in the Test Plan section.
+
+6. Using Compound Data:
+o The program must use compound data types to streamline your solution
+'''
+>>>>>>> Stashed changes
