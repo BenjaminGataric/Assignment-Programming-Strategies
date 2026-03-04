@@ -33,7 +33,7 @@ print(border)
 #Beverage selction
 user_selection = int(input("Your selection (1-3): "))
 drink_order = {}
-if user_selection == 1 or 2 or 3:
+while user_selection == 1 or 2 or 3:
     if user_selection == 1:
         print("\nYou chose Coffee:")
         drink_order[COFFEE] = COFFEE_PRICE
