@@ -112,9 +112,9 @@ if discount_order > 0:
     print(f"Discount (10%)\t\t-${discount_order:.2f}"
         f"\nAfter Discount:\t\t${discount_before_subtotal:.2f}")
 print(border)
-another_order = input("Would you like to order another drink? (Y/N): ".lower())
+another_order = input("Would you like to order another drink? (Y/N): ")
 #Reciept Summary
-if another_order == "n" or " ":
+if another_order.lower() == "n" or " ":
     print(border)
     print(f"\tRECEIPT SUMMARY") #Lelandi
     print(border)
@@ -123,55 +123,5 @@ if another_order == "n" or " ":
           f"\nTax (5%):\t\t{total_tax:.2f}"
           f"\nGrand Total:\t\t{Grand_total:.2f}")
     print(border)
-<<<<<<< Updated upstream
     print (f"\nThank you for visiting Python Cafe!"
            f"\nWe hope to see you again soon!")
-=======
-#Part 2 - WHO?
-
-
-'''Part 2: Multiple Orders and Final Receipt
-Update your Part 1 program to include the following functionality:
-
-1. Handling Multiple Orders:
-o Allow the user to place multiple beverage orders
-• After each order, ask: “Would you like to order another drink? (Y/N)” and allow
-placing a new order if the user wants.
-o Keep running totals for all orders
-o Track number of drinks ordered
-
-2. Displaying Final Receipt:
-o Display final receipt when user finishes ordering
-o Show total number of drinks
-o Show subtotal, tax, and grand total
-o Display thank you message
-
-3. Validating the User’s Input:
-o Validate all user inputs (beverage choice 1-3, extra choice 0-3)
-• If the user input falls outside of the allowed values, display an appropriate
-message, and have them try again.
-o Handle empty input when asking for another order. Empty input will be considered as
-the case of entering ‘n/N’
-o Display appropriate error messages
-o It is NOT necessary to verify that input values match the expected data type. In other
-words, you can assume that the user will enter digits for an integer item such as
-beverage and extra selection.
-
-4. Constants:
-o The program MUST use constants for:
-▪ Beverage names and prices
-▪ Extra names and prices
-▪ Discount threshold ($5.00) and rate (10%)
-▪ Tax rate (5%)
-
-5. Formatting:
-o Use formatted output with proper alignment
-o Display prices with 2 decimal places
-o Use separators and banners for visual organization
-o Overall, the program's output must be formatted to exactly match the format, layout,
-and content displayed in the sample test runs provided in the Test Plan section.
-
-6. Using Compound Data:
-o The program must use compound data types to streamline your solution
-'''
->>>>>>> Stashed changes
