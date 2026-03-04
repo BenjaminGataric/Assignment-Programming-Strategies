@@ -2,7 +2,7 @@ from typing import Final
 #Constants
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
-HOT_COCO: Final = "Hot Chocolate"
+HOT_COCO: Final = "Hot Cocolate"
 COFFEE_PRICE: Final = 3.00
 TEA_PRICE: Final = 2.50
 HOT_COCO_PRICE: Final = 3.75
@@ -42,7 +42,7 @@ while user_selection == 1 or 2 or 3:
             print("\nYou chose Tea.")
             drink_order[TEA] = TEA_PRICE
         elif user_selection == 3:
-            print("\nYou chose Hot Chocolate.")
+            print("\nYou chose Hot Cocolate.")
             drink_order[HOT_COCO] = HOT_COCO_PRICE
         else:
             print("Please enter a number between 1 and 3.")
