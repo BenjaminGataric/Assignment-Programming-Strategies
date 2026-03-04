@@ -120,3 +120,5 @@ if another_order == "n" or " ":
           f"\nTax (5%):\t\t{total_tax:.2f}"
           f"\nGrand Total:\t\t{Grand_total:.2f}")
     print(border)
+    print (f"\nThank you for visiting Python Cafe!"
+           f"\nWe hope to see you again soon!")
