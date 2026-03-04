@@ -37,12 +37,15 @@ while user_selection == 1 or 2 or 3:
     if user_selection == 1:
         print("\nYou chose Coffee:")
         drink_order[COFFEE] = COFFEE_PRICE
+        break
     elif user_selection == 2:
         print("\nYou chose Tea.")
         drink_order[TEA] = TEA_PRICE
+        break
     elif user_selection == 3:
         print("\nYou chose Hot Chocolate.") #Lelandi
         drink_order[HOT_COCO] = HOT_COCO_PRICE
+        break
     else:
         print("Please enter a number between 1 and 3.")
         user_selection = int(input("Your selection (1-3): "))
