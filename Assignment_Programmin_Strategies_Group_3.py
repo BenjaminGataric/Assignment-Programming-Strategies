@@ -116,9 +116,9 @@ if discount_order > 0:
     print(f"Discount (10%)\t\t-${discount_order:.2f}"
         f"\nAfter Discount:\t\t${discount_before_subtotal:.2f}")
 print(border)
-another_order = input("Would you like to order another drink? (Y/N): ".lower())
+another_order = input("Would you like to order another drink? (Y/N): ")
 #Reciept Summary
-if another_order == "n" or " ":
+if another_order.lower() == "n" or " ":
     print(border)
     print(f"\tRECEIPT SUMMARY") #Lelandi
     print(border)
@@ -127,10 +127,8 @@ if another_order == "n" or " ":
           f"\nTax (5%):\t\t{total_tax:.2f}"
           f"\nGrand Total:\t\t{Grand_total:.2f}")
     print(border)
-<<<<<<< Updated upstream
     print (f"\nThank you for visiting Python Cafe!"
            f"\nWe hope to see you again soon!")
-=======
 #Part 2 - WHO?
 
 
@@ -178,4 +176,3 @@ and content displayed in the sample test runs provided in the Test Plan section.
 6. Using Compound Data:
 o The program must use compound data types to streamline your solution
 '''
->>>>>>> Stashed changes
