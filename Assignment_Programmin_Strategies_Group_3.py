@@ -1,6 +1,5 @@
 from typing import Final
 #Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
-#Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
 HOT_COCO: Final = "Hot Chocolate" #Lelandi
@@ -53,10 +52,6 @@ while user_selection == 1 or 2 or 3:
 #Extra Selection
 
 #checkmark when choosing extras - WHO?
-
-
-#checkmark when choosing extras - WHO?
-
 print(f"\n{border}")
 print(f'{"Add Extras":>23}')
 print(border)
