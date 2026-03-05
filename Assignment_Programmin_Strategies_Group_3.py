@@ -1,5 +1,6 @@
 from typing import Final
 #Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
+#Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
 HOT_COCO: Final = "Hot Chocolate" #Lelandi
@@ -50,6 +51,9 @@ while user_selection == 1 or 2 or 3:
         print("Please enter a number between 1 and 3.")
         user_selection = int(input("Your selection (1-3): "))
 #Extra Selection
+
+#checkmark when choosing extras - WHO?
+
 
 #checkmark when choosing extras - WHO?
 
