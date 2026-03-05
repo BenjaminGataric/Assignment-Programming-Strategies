@@ -15,6 +15,7 @@ SYRUP_PRICE: Final = .75
 DISCOUNT_THRESHOLD: Final = 5.00
 DISCOUNT: Final = .10
 TAX: Final = .05
+
 #Welcome Message
 border = f"="*37
 order_count = 1
@@ -23,6 +24,8 @@ print(f"\tWELCOME TO Python CAFE")
 print(border)
 print(f"\nOrder #{order_count}")
 print(f"-" * 8)
+
+#Beverage Menu
 print(border)
 print(f"\tBeverage Menu:")
 print(border)
@@ -30,6 +33,7 @@ print(f"1. {COFFEE}\t\t${COFFEE_PRICE:.2f}"
       f"\n2. {TEA}\t\t\t${TEA_PRICE:.2f}"
       f"\n3. {HOT_COCO}\t${HOT_COCO_PRICE:.2f}")
 print(border)
+
 #Beverage selction
 user_selection = int(input("Your selection (1-3): "))
 drink_order = {}
@@ -60,6 +64,7 @@ print(f"1. {SUGAR}\t{SUGAR_PRICE:.2f}"
       f"\n3. {SYRUP}\t{SYRUP_PRICE:.2f}"
       f"\n0. Finish order")
 print(border)
+
 #Extras Order
 extra_order = {}
 extra_selection = int(input("Select extra (0-3): "))
@@ -84,6 +89,7 @@ while extra_selection == 1 or 2 or 3 or 0:
     else:
         print("Please enter a number between 0 and 3.")
         extra_selection = int(input("Select extra (0-3): "))
+
 #Calculations
 subtotal = 0
 for v in drink_order.values():
@@ -97,6 +103,7 @@ else:
 discount_before_subtotal = subtotal - discount_order
 total_tax = discount_before_subtotal * TAX
 Grand_total = total_tax + discount_before_subtotal
+
 #Order Summary
 print(border)
 print(f"\tORDER SUMMARY")
@@ -113,6 +120,7 @@ if discount_order > 0:
         f"\nAfter Discount:\t\t${discount_before_subtotal:.2f}")
 print(border)
 another_order = input("Would you like to order another drink? (Y/N): ")
+
 #Reciept Summary
 if another_order.lower() == "n" or " ":
     print(border)
