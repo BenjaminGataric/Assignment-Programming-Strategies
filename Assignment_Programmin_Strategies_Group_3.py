@@ -1,5 +1,5 @@
 from typing import Final
-#Constants (TASK 1 - put constants in a dictionary or tuple - WHO?)
+#Constants - Keep as regular constants, placing in a dictionary will cause errors in the rest of the code
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
 HOT_COCO: Final = "Hot Chocolate" #Lelandi
@@ -65,17 +65,17 @@ extra_order = {}
 extra_selection = int(input("Select extra (0-3): "))
 while extra_selection == 1 or 2 or 3 or 0:
     if extra_selection == 1:
-        print(f"{SUGAR} added ({SUGAR_PRICE})")
+        print(f"{SUGAR} added (+${SUGAR_PRICE:.2f})")
         extra_order[SUGAR] = SUGAR_PRICE
         extra_selection = int(input("Select extra (0-3): "))
         if extra_selection == 1:
             print("Sugar is already added.")
     elif extra_selection == 2:
-        print(f"{CREAM} added ({CREAM_PRICE})")
+        print(f"{CREAM} added (+${CREAM_PRICE:.2f})")
         extra_order[CREAM] = CREAM_PRICE
         extra_selection = int(input("Select extra (0-3): "))
     elif extra_selection == 3:
-        print(f"{SYRUP} added ({SYRUP_PRICE})")
+        print(f"{SYRUP} added (+${SYRUP_PRICE:.2f})")
         extra_order[SYRUP] = SYRUP_PRICE
         extra_selection = int(input("Select extra (0-3): "))
     elif extra_selection == 0:
@@ -123,5 +123,5 @@ if another_order.lower() == "n" or " ":
           f"\nTax (5%):\t\t{total_tax:.2f}"
           f"\nGrand Total:\t\t{Grand_total:.2f}")
     print(border)
-#Part 2 - WHO?
-
+    print (f"\nThank you for visiting Python Cafe!"
+           f"\nWe hope to see you again soon!")
