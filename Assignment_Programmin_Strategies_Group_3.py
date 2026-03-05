@@ -68,27 +68,29 @@ print(border)
 #Extras Order
 extra_order = {}
 extra_selection = int(input("Select extra (0-3): "))
-while extra_selection == 1 or 2 or 3 or 0:
-    if extra_selection == 1:
-        print(f"{SUGAR} added (+${SUGAR_PRICE:.2f})")
-        extra_order[SUGAR] = SUGAR_PRICE
-        extra_selection = int(input("Select extra (0-3): "))
-        if extra_selection == 1:
+
+while extra_selection != 0:
+    if extra_selection == 1:   
+        if SUGAR in extra_order:
             print("Sugar is already added.")
+        else:
+            print(f"{SUGAR} added (+${SUGAR_PRICE:.2f})")
+            extra_order[SUGAR] = SUGAR_PRICE
     elif extra_selection == 2:
-        print(f"{CREAM} added (+${CREAM_PRICE:.2f})")
-        extra_order[CREAM] = CREAM_PRICE
-        extra_selection = int(input("Select extra (0-3): "))
+        if CREAM in extra_order:
+            print("Cream is already added.")
+        else:
+            print(f"{CREAM} added (+${CREAM_PRICE:.2f})")
+            extra_order[CREAM] = CREAM_PRICE
     elif extra_selection == 3:
-        print(f"{SYRUP} added (+${SYRUP_PRICE:.2f})")
-        extra_order[SYRUP] = SYRUP_PRICE
-        extra_selection = int(input("Select extra (0-3): "))
-    elif extra_selection == 0:
-        break
-    
+        if SYRUP in extra_order:
+            print("Syrup is already added.")
+        else:
+            print(f"{SYRUP} added (+${SYRUP_PRICE:.2f})")
+            extra_order[SYRUP] = SYRUP_PRICE
     else:
-        print("Please enter a number between 0 and 3.")
-        extra_selection = int(input("Select extra (0-3): "))
+        print("Please enter a number between 0 and 3.")  
+    extra_selection = int(input("Select extra (0-3): "))
 
 #Calculations
 subtotal = 0
