@@ -125,4 +125,3 @@ if another_order.lower() == "n" or " ":
     print(border)
     print (f"\nThank you for visiting Python Cafe!"
            f"\nWe hope to see you again soon!")
-#vince
