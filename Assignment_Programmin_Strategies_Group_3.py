@@ -81,6 +81,7 @@ while extra_selection == 1 or 2 or 3 or 0:
         extra_selection = int(input("Select extra (0-3): "))
     elif extra_selection == 0:
         break
+    
     else:
         print("Please enter a number between 0 and 3.")
         extra_selection = int(input("Select extra (0-3): "))
