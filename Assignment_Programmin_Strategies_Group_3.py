@@ -112,9 +112,9 @@ if discount_order > 0:
     print(f"Discount (10%)\t\t-${discount_order:.2f}"
         f"\nAfter Discount:\t\t${discount_before_subtotal:.2f}")
 print(border)
-another_order = input("Would you like to order another drink? (Y/N): ".lower())
+another_order = input("Would you like to order another drink? (Y/N): ")
 #Reciept Summary
-if another_order == "n" or " ":
+if another_order.lower() == "n" or " ":
     print(border)
     print(f"\tRECEIPT SUMMARY") #Lelandi
     print(border)
