@@ -133,13 +133,13 @@ while order_count >= 0:
     print(border)
     for key, val in drink_order.items():
         print(f"Beverage: {key}\t${val:.2f}")
-    if extra_selection == 1 or 2 or 3:
+    if len(extra_order) > 0:
         print(f"Extras:")
         for key, val in extra_order.items():
             print(f"   • {key}\t\t${val:.2f}")
     print(f"Subtotal: \t\t${subtotal:.2f}")
     if discount_order > 0:
-        print(f"Discount (10%)\t\t-${discount_order:.2f}")
+        print(f"{'Discount (10%)':<22} -${discount_order:.2f}")
         print(f"After Discount:\t\t${discount_before_subtotal:.2f}")
     print(border)
     another_order = input(f"\nWould you like to order another drink? (Y/N): ")
