@@ -59,7 +59,7 @@ while order_count >= 0:
     #Extra Selection
     extra_menu = {"1. Sugar": "$0.10", "2. Cream": "$0.50", "3. Syrup": "$0.75", "0. Finish Order":""}
     print(f"\n{border}")
-    print(f'{"Add Extras":>23}')
+    print(f'{"Add Extras":^37}')
     print(border)
     for key, val in extra_menu.items():
         print(f"{key}\t{val}")
@@ -120,12 +120,12 @@ while order_count >= 0:
     print(f"{"ORDER SUMMARY":^37}")
     print(border)
     for key, val in drink_order.items():
-        print(f"Beverage: {key}\t${val:.2f}")
+        print(f"Beverage: {key}\t\t${val:.2f}")
     if len(extra_order) > 0:
         print(f"Extras:")
         for key, val in extra_order.items():
             print(f"   • {key}\t\t${val:.2f}")
-    print(f"Subtotal: \t\t${subtotal:.2f}")
+    print(f"Subtotal: \t\t\t${subtotal:.2f}")
     if discount_order > 0:
         print(f"{'Discount (10%)':<22} -${discount_order:.2f}")
         print(f"After Discount:\t\t${discount_before_subtotal:.2f}")
@@ -141,7 +141,7 @@ while order_count >= 0:
     #Reciept Summary
     if another_order.lower() != "y":
         print(f"\n{border}")
-        print(f"\tRECEIPT SUMMARY") #Lelandi
+        print(f'{f"RECEIPT SUMMARY":^37}') #Lelandi
         print(border)
         print(f"\nNumber of Drinks:\t{order_count}"
               f"\nSubtotal:\t\t${grand_total:.2f}"
