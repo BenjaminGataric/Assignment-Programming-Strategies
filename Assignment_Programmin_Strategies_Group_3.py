@@ -93,6 +93,14 @@ while order_count >= 0:
                 extra_menu["3. Syrup"] = "$0.75 ✓"
         else:
             print("Please enter a number between 0 and 3.")  
+
+        print(f"\n{border}")
+        print(f'{"Add Extras":>23}')
+        print(border)
+        for key, val in extra_menu.items():
+            print(f"{key}\t{val}")
+        print(border)
+
         extra_selection = int(input("Select extra (0-3): "))
         
 
