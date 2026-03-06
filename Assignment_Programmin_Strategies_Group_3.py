@@ -120,15 +120,15 @@ while order_count >= 0:
     print(f"{"ORDER SUMMARY":^37}")
     print(border)
     for key, val in drink_order.items():
-        print(f"Beverage: {key}\t\t${val:.2f}")
+        print(f"Beverage: {key}\t{f'${val:.2f}':>11}")
     if len(extra_order) > 0:
         print(f"Extras:")
         for key, val in extra_order.items():
-            print(f"   • {key}\t\t${val:.2f}")
-    print(f"Subtotal: \t\t\t${subtotal:.2f}")
+            print(f"   • {key}\t\t{f'${val:.2f}':>11}")
+    print(f"Subtotal: \t\t{f'${subtotal:.2f}':>11}")
     if discount_order > 0:
-        print(f"{'Discount (10%)':<22} -${discount_order:.2f}")
-        print(f"After Discount:\t\t${discount_before_subtotal:.2f}")
+        print(f"{'Discount (10%)':<22} {f'-${discount_order:.2f}':>12}")
+        print(f"After Discount:\t\t{f'${discount_before_subtotal:.2f}':>11}")
     print(border)
     another_order = input(f"\nWould you like to order another drink? (Y/N): ")
     #Recipt Calculations
@@ -143,10 +143,10 @@ while order_count >= 0:
         print(f"\n{border}")
         print(f'{f"RECEIPT SUMMARY":^37}') #Lelandi
         print(border)
-        print(f"\nNumber of Drinks:\t{order_count}"
-              f"\nSubtotal:\t\t${grand_total:.2f}"
-              f"\nTax (5%):\t\t${grand_total_tax:.2f}"
-              f"\nGrand Total:\t\t${grand_total_final:.2f}")
+        print(f"\nNumber of Drinks:\t{f'{order_count}':>7}"
+              f"\nSubtotal:\t\t{f'${grand_total:.2f}':>11}"
+              f"\nTax (5%):\t\t{f'${grand_total_tax:.2f}':>11}"
+              f"\nGrand Total:\t\t{f'${grand_total_final:.2f}':>11}")
         print(border)
         print (f"\nThank you for visiting Python Cafe!"
            f"\nWe hope to see you again soon!")
