@@ -1,4 +1,5 @@
-Test #1
+Test #1:
+
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -19,8 +20,8 @@ Your selection (1-3): 4
 Please enter a number between 1 and 3.
 Your selection (1-3):
 
+Test #2:
 
-Test #2
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -53,8 +54,8 @@ Select extra (0-3): 4
 Please enter a number between 0 and 3.
 Select extra (0-3):
 
+Test #3:
 
-Test #3
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -87,7 +88,6 @@ Select extra (0-3): 0
             ORDER SUMMARY
 =====================================
 Beverage: Coffee              $3.00
-Extras:
 Subtotal:                     $3.00
 =====================================
 
@@ -106,7 +106,8 @@ Grand Total:                  $3.15
 Thank you for visiting Python Cafe!
 We hope to see you again soon!
 
-Test #4
+Test #4:
+
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -207,7 +208,8 @@ Grand Total:                  $4.82
 Thank you for visiting Python Cafe!
 We hope to see you again soon!
 
-Test #5
+Test #5:
+
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -318,6 +320,7 @@ Thank you for visiting Python Cafe!
 We hope to see you again soon!
 
 Test #6
+
 =====================================
         WELCOME TO Python CAFE
 =====================================
@@ -350,11 +353,10 @@ Select extra (0-3): 0
             ORDER SUMMARY
 =====================================
 Beverage: Coffee              $3.00
-Extras:
 Subtotal:                     $3.00
 =====================================
 
-Would you like to order another drink? (Y/N): 
+Would you like to order another drink? (Y/N):
 
 =====================================
            RECEIPT SUMMARY
