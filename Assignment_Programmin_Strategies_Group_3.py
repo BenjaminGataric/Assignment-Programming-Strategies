@@ -1,3 +1,14 @@
+'''
+Program Name: Cafe Ordering System
+Description: Collect user inputs for multiple beverage orders and display single order and complete order calculations 
+Authors: Ben Gataric, Vincent Ruiyang Li, Lelandi Calil De Asis, Devon Huynh
+Date: March 6th, 2026
+
+'''
+
+
+
+
 from typing import Final
 #Constants
 COFFEE: Final = "Coffee"
