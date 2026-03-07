@@ -124,9 +124,9 @@ while order_count >= 0:
     for key, val in drink_order.items():
         print(f"Beverage: {key:<11}\t{f'${val:.2f}':>11}")
     if len(extra_order) > 0:
+        print("Extras:")
         for key, val in extra_order.items():
             if extra_selection == "1" or "2" or "3":
-                print("Extras:")
                 print(f"   • {key}\t\t{f'${val:.2f}':>11}")
     print(f"Subtotal: \t\t{f'${subtotal:.2f}':>11}")
     if discount_order > 0:
