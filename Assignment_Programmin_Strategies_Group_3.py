@@ -38,24 +38,24 @@ while order_count >= 0:
     print(border)
 
 #Beverage selction
-    user_selection = int(input("Your selection (1-3): "))
+    user_selection = input("Your selection (1-3): ")
     drink_order = {}
-    while user_selection == 1 or 2 or 3:
-        if user_selection == 1:
+    while user_selection == "1" or "2" or "3":
+        if user_selection == "1":
             print("\nYou chose Coffee:")
             drink_order[COFFEE] = COFFEE_PRICE
             break
-        elif user_selection == 2:
+        elif user_selection == "2":
             print("\nYou chose Tea.")
             drink_order[TEA] = TEA_PRICE
             break
-        elif user_selection == 3:
+        elif user_selection == "3":
             print("\nYou chose Hot Chocolate.")
             drink_order[HOT_COCO] = HOT_COCO_PRICE
             break
         else:
             print("Please enter a number between 1 and 3.")
-            user_selection = int(input("Your selection (1-3): "))
+            user_selection = input("Your selection (1-3): ")
     #Extra Selection
     extra_menu = {"1. Sugar": "$0.10", "2. Cream": "$0.50", "3. Syrup": "$0.75", "0. Finish Order":""}
     print(f"\n{border}")
@@ -67,24 +67,24 @@ while order_count >= 0:
 
     #Extras Order
     extra_order = {}
-    extra_selection = int(input("Select extra (0-3): "))
+    extra_selection = input("Select extra (0-3): ")
 
-    while extra_selection != 0:
-        if extra_selection == 1:   
+    while extra_selection != "0":
+        if extra_selection == "1":   
             if SUGAR in extra_order:
                 print("Sugar is already added.")
             else:
                 print(f"{SUGAR} added (+${SUGAR_PRICE:.2f}).")
                 extra_menu["1. Sugar"] = "$0.10 ✓"
                 extra_order[SUGAR] = SUGAR_PRICE
-        elif extra_selection == 2:
+        elif extra_selection == "2":
             if CREAM in extra_order:
                 print("Cream is already added.")
             else:
                 print(f"{CREAM} added (+${CREAM_PRICE:.2f}).")
                 extra_order[CREAM] = CREAM_PRICE
                 extra_menu["2. Cream"] = "$0.50 ✓"
-        elif extra_selection == 3:
+        elif extra_selection == "3":
             if SYRUP in extra_order:
                 print("Syrup is already added.")
             else:
@@ -101,7 +101,7 @@ while order_count >= 0:
         for key, val in extra_menu.items():
             print(f"{key}\t{val}")
         print(border)
-        extra_selection = int(input("Select extra (0-3): "))
+        extra_selection = input("Select extra (0-3): ")
         
 
     #Oder Calculations
@@ -123,13 +123,13 @@ while order_count >= 0:
     print(border)
     for key, val in drink_order.items():
         print(f"Beverage: {key:<11}\t{f'${val:.2f}':>11}")
-    if extra_selection == 1 or 2 or 3:
+    if extra_selection == "1" or "2" or "3":
         print(f"Extras:")
     for key, val in extra_order.items():
-            if extra_selection == 1 or 2 or 3:
+            if extra_selection == "1" or "2" or "3":
                 print(f"   • {key}\t\t{f'${val:.2f}':>11}")
     print(f"Subtotal: \t\t{f'${subtotal:.2f}':>11}")
-    if discount_order > 0:
+    if discount_order >= 0:
         print(f"{'Discount (10%)':<22} {f'-${discount_order:.2f}':>12}")
         print(f"After Discount:\t\t{f'${discount_before_subtotal:.2f}':>11}")
     print(border)
