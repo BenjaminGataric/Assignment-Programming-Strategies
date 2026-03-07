@@ -1,5 +1,5 @@
 from typing import Final
-#Constants - Keep as regular constants, placing in a dictionary will cause errors in the rest of the code
+#Constants
 COFFEE: Final = "Coffee"
 TEA: Final = "Tea"
 HOT_COCO: Final = "Hot Chocolate"
